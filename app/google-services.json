@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "846321847754",
+    "firebase_url": "https://player-e4651.firebaseio.com",
+    "project_id": "player-e4651",
+    "storage_bucket": "player-e4651.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846321847754:android:554bb730ce3d73257b1333",
+        "android_client_info": {
+          "package_name": "com.test.youtubeplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846321847754-8pk65fm2rlekhf69pun112lps392ib6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6eT5QdaJ-gsPukpyrd3lByiwzXjylFcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846321847754-8pk65fm2rlekhf69pun112lps392ib6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

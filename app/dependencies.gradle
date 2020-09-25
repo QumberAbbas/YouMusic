@@ -1,0 +1,100 @@
+dependencies {
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Kotlin Extensions
+    implementation "androidx.core:core-ktx:$ktx_android"
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$ktx_coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$ktx_coroutines"
+
+    //UI
+    implementation "androidx.cardview:cardview:$androidx_cardview"
+    implementation "androidx.appcompat:appcompat:$androidx_appcompat"
+
+
+    // Constraint Layout
+    implementation "androidx.constraintlayout:constraintlayout:$androidx_constraintlayout"
+
+    //LifeCycle
+    implementation "androidx.lifecycle:lifecycle-extensions:$arch_lifecycle_extensions"
+    implementation "android.arch.lifecycle:runtime:$arch_lifecycle_runtime"
+
+    // Kotlin Extensions for Lifecycle arch components
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$ktx_arch_lifecycle"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$ktx_arch_lifecycle"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$ktx_arch_lifecycle"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$arch_navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$arch_navigation_version"
+    implementation "androidx.navigation:navigation-runtime-ktx:$arch_navigation_version"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    //Room
+    implementation "androidx.room:room-runtime:$arch_room"
+    kapt "androidx.room:room-compiler:$arch_room"
+    implementation "androidx.room:room-ktx:$arch_room"
+
+    // DI- Hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_arch_viemodel"
+    kapt "androidx.hilt:hilt-compiler:$hilt_compiler"
+
+    //Networking
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofit}"
+    implementation "com.squareup.okhttp3:logging-interceptor:$retrofit_logging"
+
+    //Gson (for shared pref)
+    implementation "com.google.code.gson:gson:$gson"
+
+
+    // youtube player
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+
+    //Youtube Data API
+    implementation('com.google.api-client:google-api-client-android:1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation('com.google.apis:google-api-services-youtube:v3-rev183-1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+
+    //firebase
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:19.4.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+
+    testImplementation 'org.mockito:mockito-inline:3.4.6'
+    implementation 'androidx.arch.core:core-testing:2.1.0'
+
+    implementation "androidx.preference:preference-ktx:1.1.1"
+
+    implementation 'com.google.android.material:material:1.2.1'
+
+    implementation "com.airbnb.android:lottie:3.4.0"
+
+    // Test
+    testImplementation "junit:junit:$test_junit"
+    androidTestImplementation "androidx.test.ext:junit:$android_test_junit"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$ktx_coroutines"
+    androidTestImplementation "com.google.guava:guava:27.0.1-android"
+    androidTestImplementation ("com.google.truth:truth:1.0") {
+        exclude group: "com.google.guava", module: "guava"
+    }
+
+
+    //androidx-activity
+    def androidXActivityVersion = "1.2.0-alpha05"
+    implementation "androidx.activity:activity:$androidXActivityVersion"
+    implementation "androidx.activity:activity-ktx:$androidXActivityVersion"
+}
