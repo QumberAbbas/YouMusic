@@ -52,4 +52,5 @@ https://streamable.com/tomy9p
 
 ## APK File
 <img src="https://www.diawi.com/qrcode/link/N2tRhy" width="200" height="200">
+OR https://i.diawi.com/N2tRhy
 
