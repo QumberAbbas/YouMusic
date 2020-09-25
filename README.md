@@ -33,6 +33,8 @@ YouTube data API expects at least a single channel for the current user. If the 
 ### 3. Playlist Details Activity
 User can select any of the playlist been retreieved and on selecting that user can play any playlist video.
 
+
+
 ### 4. Search Activity
 From the play list screen, user can navigate to the search screen. With a search term, the search can be performed
 
@@ -44,4 +46,10 @@ App caches the playlists and its videos locally in database. Though the search f
 
 ## Testing
 Mocktio is used for unit testing
+
+## Video Demo
+https://streamable.com/tomy9p
+
+## APK File
+<img src="https://www.diawi.com/qrcode/link/N2tRhy" width="200" height="200">
 
