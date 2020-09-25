@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test.youtubeplayer">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.test.youtubeplayer.application.YoutubePlayerApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.test.youtubeplayer.feature.splash.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".feature.authentication.ui.AuthenticationActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".feature.playlist.ui.PlayListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar" />
+
+        <activity
+            android:name=".feature.search.ui.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar" />
+
+        <activity
+            android:name=".feature.player.VideoPlayerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".feature.playlistdetails.ui.PlaylistDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWithActionBar" />
+    </application>
+
+</manifest>
